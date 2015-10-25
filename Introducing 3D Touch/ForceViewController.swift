@@ -12,6 +12,20 @@ class ForceViewController: UIViewController {
     
     @IBOutlet weak var forceOutput: UILabel!
     
+    override func previewActionItems() -> [UIPreviewActionItem] {
+        let regularAction = UIPreviewAction(title: "Regular", style: .Default) { (action: UIPreviewAction, vc: UIViewController) -> Void in
+            
+        }
+        
+        let destructiveAction = UIPreviewAction(title: "Destructive", style: .Destructive) { (action: UIPreviewAction, vc: UIViewController) -> Void in
+            
+        }
+        
+        let actionGroup = UIPreviewActionGroup(title: "Group...", style: .Default, actions: [regularAction, destructiveAction])
+        
+        return [regularAction, destructiveAction, actionGroup]
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,6 +37,12 @@ class ForceViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        if let touch = touches.first where traitCollection.forceTouchCapability == .Available {
+            self.forceOutput.text = "\(touch.force)\n(touch.maximumPossibleForce)"
+        }
     }
 
     /*

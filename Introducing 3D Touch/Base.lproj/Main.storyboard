@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
     </dependencies>
     <scenes>
         <!--Master-->
@@ -115,7 +116,10 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="showDetail" id="6S0-TO-JiA"/>
+                                    <segue destination="vC3-pB-5Vb" kind="showDetail" identifier="showDetail" id="6S0-TO-JiA">
+                                        <segue key="commit" inheritsFrom="parent" id="eEs-NN-ULF"/>
+                                        <segue key="preview" destination="vC3-pB-5Vb" identifier="showDetailPeek" id="BGu-am-tMs"/>
+                                    </segue>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

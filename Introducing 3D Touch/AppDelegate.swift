@@ -56,6 +56,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         }
         return false
     }
+    
+    func application(application: UIApplication, performActionForShortcutItem shortcutItem: UIApplicationShortcutItem, completionHandler: (Bool) -> Void) {
+        if shortcutItem.type == "com.tutsplus.Introducing-3D-Touch.add-item" {
+            let splitViewController = self.window!.rootViewController as! UISplitViewController
+            let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
+            let masterViewController = navigationController.viewControllers[0] as! MasterViewController
+            masterViewController.insertNewObject(UIButton())
+            
+            completionHandler(true)
+        }
+        
+        completionHandler(false)
+    }
 
 }
 

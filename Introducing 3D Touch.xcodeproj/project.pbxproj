@@ -14,6 +14,7 @@
 		6071CBFC1BDB3B0A005B1B98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6071CBFB1BDB3B0A005B1B98 /* Assets.xcassets */; };
 		6071CBFF1BDB3B0A005B1B98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6071CBFD1BDB3B0A005B1B98 /* LaunchScreen.storyboard */; };
 		6071CC071BDB49FA005B1B98 /* ForceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071CC061BDB49FA005B1B98 /* ForceViewController.swift */; };
+		6071CC091BDB861D005B1B98 /* MasterPreviewing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6071CC081BDB861D005B1B98 /* MasterPreviewing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		6071CBFE1BDB3B0A005B1B98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6071CC001BDB3B0A005B1B98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6071CC061BDB49FA005B1B98 /* ForceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForceViewController.swift; sourceTree = "<group>"; };
+		6071CC081BDB861D005B1B98 /* MasterPreviewing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterPreviewing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				6071CBF21BDB3B0A005B1B98 /* AppDelegate.swift */,
 				6071CBF41BDB3B0A005B1B98 /* MasterViewController.swift */,
+				6071CC081BDB861D005B1B98 /* MasterPreviewing.swift */,
 				6071CBF61BDB3B0A005B1B98 /* DetailViewController.swift */,
 				6071CC061BDB49FA005B1B98 /* ForceViewController.swift */,
 				6071CBF81BDB3B0A005B1B98 /* Main.storyboard */,
@@ -144,6 +147,7 @@
 				6071CBF71BDB3B0A005B1B98 /* DetailViewController.swift in Sources */,
 				6071CBF51BDB3B0A005B1B98 /* MasterViewController.swift in Sources */,
 				6071CC071BDB49FA005B1B98 /* ForceViewController.swift in Sources */,
+				6071CC091BDB861D005B1B98 /* MasterPreviewing.swift in Sources */,
 				6071CBF31BDB3B0A005B1B98 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
